@@ -141,33 +141,35 @@
     <section>
         <h2>Contacto</h2>
 
-        <form action="">
+        <form action="" class="formulario">
             <fieldset>
                 <legend>Contanctame llenando todos los campos</legend>
-                <div>
-                    <label for="">Nombre</label>
-                    <input type="text" placeholder="Tu Nombre">
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="">Nombre</label>
+                        <input class="input-text" type="text" placeholder="Tu Nombre">
 
-                </div>
-                <div>
-                    <label for="">Telefono</label>
-                    <input type="tel" placeholder="Tu telefono">
-                </div>
-                <div>
-                    <label for="">Telefono</label>
-                    <input type="tel" placeholder="Tu telefono">
-                </div>
-                <div>
-                    <label for="">Correo</label>
-                    <input type="email" placeholder="Tu Correo Electrónico">
-                </div>
-                <div>
-                    <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
+                    </div>
+                    <div class="campo">
+                        <label for="">Telefono</label>
+                        <input class="input-text" type="tel" placeholder="Tu telefono">
+                    </div>
+                    <div class="campo">
+                        <label for="">Telefono</label>
+                        <input class="input-text" type="tel" placeholder="Tu telefono">
+                    </div>
+                    <div class="campo">
+                        <label for="">Correo</label>
+                        <input class="input-text" type="email" placeholder="Tu Correo Electrónico">
+                    </div>
+                    <div class="campo">
+                        <label for="">Mensaje</label>
+                        <textarea class="input-text" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div> <!--Este es el contenedor de los campos-->
 
-                <div>
-                    <input class="boton" type="submit" value="Enviar">
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
                 </div>
 
             </fieldset>

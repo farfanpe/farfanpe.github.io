@@ -51,12 +51,17 @@ body {
     /*Redondear esquinas*/
     width: 90%;
     text-align: center;
+    border: none;
 }
 
 @media (min-width: 768px) {
     .boton {
         width: auto;
     }
+}
+
+.boton :hover {
+    cursor: pointer;
 }
 
 .sombra {
@@ -93,6 +98,24 @@ Los id se invocan con el signo de gato #id{}*/
 .titulo span {
     font-size: 2rem;
     color: blue;
+}
+
+/*Utilidades*/
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 780px) {
+    .w-sm-100{
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+
+}
+.alinear-derecha {
+    justify-content: flex-end;
 }
 
 /* Navegacion principal*/
@@ -200,6 +223,56 @@ Los id se invocan con el signo de gato #id{}*/
 }
 
 
+/*Contacto*/
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);/*Usa el valor minimo*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.formulario fieldset {
+    border: none;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.contenedor-campos {
+
+
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+
+}
+.input-text {
+    background-color: #c8ecf0;
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton {
+    width: 100%;
+
+}
 /*Especificidad en CSS es la importancia que tiene un selector para aplicar el código CSS a un
 elemento sobre otros. Para que pase un selector por encima de todos los demas se agrega una bandera
 que lo indique !important 
